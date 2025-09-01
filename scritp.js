@@ -39,6 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("show");
+    
+    const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 
     // Toggle hamburger icon to X
     if (hamburger.textContent === "☰") {
